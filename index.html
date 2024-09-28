@@ -11,8 +11,8 @@
     <p>it is unknown. we don't know what will we achieve being alive.</p>
     <table border="1">
         <tr>
-            <th>life's pleasure</th>
-            <th>life's problems</th>
+            <th style="color: green;">life's pleasure</th>
+            <th style="color: red;">life's problems</th>
         </tr>
         <tr> 
         <td>beautiful nature.</td>
@@ -20,8 +20,35 @@
         </tr>
     </table>
     <br>
-    <h6>Wanna see the segment of beautiful of nature? Here is it in given below image.</h6>
+    <h6 style="color: green;">Wanna see the segment of beautiful of nature? Here is it in given below image.</h6>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIK9tLzGR8mbzqnaSLsvX3SXH1sQw6RxJV6kq-dVCKcS0WjdE802l5Cm5z&s=10" alt="wanna see the pleasure of nature? here is it." width=100%>
-    
+    <form action="index.php" method="post"> 
+    <label for="email">What's your email?</label>
+    <input name="email" type="email" id="email" placeholder="your email here." required>
+    <br>
+    <label for="life's question">what you will do if you became heartless or emotionless?</label>
+    <input type="text" name="life's decision" id="life's question" required>
+    <br>
+    <label for="password">what is one word you love?</label>
+    <input type="password" name="loved word" id="password" required>
+    <br> 
+    <h5>if you have these below options what will you choose?</h5>
+
+    <label for="death without pain">Death without pain</label>
+    <input type="radio" name="first choice" value="Death" id="death without pain" required>
+    <label for="wordly pleasures">Life with worldy pleasures</label>
+    <input type="radio" name="first choice" value="wordly pleasures" id="wordly pleasures" required>
+    <h5>Would you like to live this life:</h5>
+    <label for="living life with relationships">Living life with relationships</label>
+    <input type="checkbox" name="living choice" value="living life with relationships" id="living life with relationships" required> 
+    <label for="living life without any relationships etc">living life without relationships etc</label>
+    <input type="checkbox" name="living choice" value="living life without emotions and relationships etc." id="living life without any relationships etc" required>
+    <br>
+    <label for="any questions">Do you have any questions related to your inner soul?</label>
+    <textarea id="any questions" rows="10" cols="50" name="questions" placeholder="write here." required></textarea>
+    <br>
+    <br>
+    <input type="submit" value="submit">
+    </form>
 </body>
 </html>
