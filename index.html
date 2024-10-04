@@ -4,26 +4,31 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .a-message { position: sticky; 
-                     bottom: 0px;
-                     background-color: blue; 
-                     padding: 10px; 
-                    color: red;
-                    border: 2px;
-                    font-size: 15px; 
-                    font-family: courier new;
-                   }
-        body { background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbskJD8GeAhhLMU3sTOZqTfy1VOP5yRRSQtOHsXqhCMCFxzWdn7mLc_K3p&s=10"); 
+        .a-message { 
+            position: sticky; 
+            bottom: 0px;
+            background-color: blue; 
+            padding: 10px; 
+            color: red;
+            border: 2px;
+            font-size: 15px; 
+            font-family: courier new;
+        }
+        body { 
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbskJD8GeAhhLMU3sTOZqTfy1VOP5yRRSQtOHsXqhCMCFxzWdn7mLc_K3p&s=10"); 
             background-size: cover; 
             background-attachment: fixed; 
             background-repeat: no-repeat;             
-            } 
-        p { color: red; 
+        } 
+        p { 
+            color: red; 
             font-size: 20px; 
-            text-align: centre;
+            text-align: center;
             font-family: courier new;
-          }
-        h6 { font-family: times new roman;}
+        }
+        h6 { 
+            font-family: times new roman;
+        }
     </style>
     <title>this is my website</title>
 </head>
@@ -45,36 +50,44 @@
     </table>
     <br>
     <h6 style="color: green;">Wanna see the segment of beautiful of nature? Here is it in given below image.</h6>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIK9tLzGR8mbzqnaSLsvX3SXH1sQw6RxJV6kq-dVCKcS0WjdE802l5Cm5z&s=10" alt="wanna see the pleasure of nature? here is it." width=100%>
-    <form action="index.php" method="post"> 
-    <label for="email">What's your email?</label>
-    <input name="email" type="email" id="email" placeholder="your email here." required>
-    <br>
-    <label for="life's question">what you will do if you became heartless or emotionless?</label>
-    <input type="text" name="life's decision" id="life's question" required>
-    <br>
-    <label for="password">what is one word you love?</label>
-    <input type="password" name="loved word" id="password" required>
-    <br> 
-    <h5>if you have these below options what will you choose?</h5>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIK9tLzGR8mbzqnaSLsvX3SXH1sQw6RxJV6kq-dVCKcS0WjdE802l5Cm5z&s=10" alt="wanna see the pleasure of nature? here is it." width="100%">
+    
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="482c64e2-a333-4b4a-bfab-86d6dd2419fe">
 
-    <label for="death without pain">Death without pain</label>
-    <input type="radio" name="first choice" value="Death" id="death without pain" required>
-    <label for="wordly pleasures">Life with worldy pleasures</label>
-    <input type="radio" name="first choice" value="wordly pleasures" id="wordly pleasures" required>
-    <h5>Would you like to live this life:</h5>
-    <label for="living life with relationships">Living life with relationships</label>
-    <input type="checkbox" name="living choice" value="living life with relationships" id="living life with relationships" required> 
-    <label for="living life without any relationships etc">living life without relationships etc</label>
-    <input type="checkbox" name="living choice" value="living life without emotions and relationships etc." id="living life without any relationships etc" required>
-    <br>
-    <label for="any questions">Do you have any questions related to your inner soul?</label>
-    <br>
-    <textarea id="any questions" rows="10" cols="50" name="questions" placeholder="write here." required></textarea>
-    <br>
-    <br>
-    <input type="submit" value="submit">
+        <label for="email">What's your email?</label>
+        <input name="email" type="email" id="email" placeholder="your email here." required>
+        <br>
+
+        <label for="life's question">what you will do if you became heartless or emotionless?</label>
+        <input type="text" name="life's decision" id="life's question" required>
+        <br>
+
+        <label for="password">what is one word you love?</label>
+        <input type="password" name="loved word" id="password" required>
+        <br> 
+
+        <h5>if you have these below options what will you choose?</h5>
+        <label for="death without pain">Death without pain</label>
+        <input type="radio" name="first choice" value="Death" id="death without pain" required>
+        <label for="wordly pleasures">Life with worldy pleasures</label>
+        <input type="radio" name="first choice" value="wordly pleasures" id="wordly pleasures" required>
+        
+        <h5>Would you like to live this life:</h5>
+        <label for="living life with relationships">Living life with relationships</label>
+        <input type="checkbox" name="living-choice[]" value="living life with relationships" id="living life with relationships"> 
+
+        <label for="living life without any relationships etc">Living life without relationships etc.</label>
+        <input type="checkbox" name="living-choice[]" value="living life without relationships" id="living life without any relationships etc">
+        <br>
+
+        <label for="any questions">Do you have any questions related to your inner soul?</label>
+        <br>
+        <textarea id="any questions" rows="10" cols="50" name="questions" placeholder="write here." required></textarea>
+        <br>
+        <input type="submit" value="submit">
     </form>
-<p class="a-message">Click 'submit' to send these information.</p>
+
+    <p class="a-message">Click 'submit' to send these information.</p>
 </body>
 </html>
