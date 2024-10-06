@@ -4,6 +4,7 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        * { width: 100%; }
         .a-message { 
             position: sticky; 
             bottom: 0px;
@@ -15,6 +16,8 @@
             font-family: courier new;
         }
         body { 
+            width: 100vw;
+            height: 100vh;
             background-image: url("https://tse1.mm.bing.net/th/id/OIG4.pr78lIv8xIRG96zle6Qq?pid=ImgDetMain"); 
             background-size: cover; 
             background-attachment: fixed; 
@@ -29,10 +32,36 @@
         h6 { 
             font-family: times new roman;
         }
+       .image { position: relative; 
+                left: 110px;
+                width: 200px;
+                height: 90px;
+                background-image: url("https://tse2.mm.bing.net/th/id/OIG1.OguDTn9xJEiPtd7IXnid?pid=ImgDetMain");
+               background-size: contain;
+               background-repeat: no-repeat;
+               animation-name: moving-animation; 
+               animation-duration: 3s; 
+               animation-timing-function: ease; 
+               animation-direction: forward; 
+               animation-iteration-count: infinite;
+              }
+        @keyframes moving-animation { 
+                                    0% { transform: translateX(0px);
+                                       }
+    50%  { transform: translateX(50%);      
+         }
+    85% {tranform: translateX(0px);
+        }
+    100% {transform: tranlateX(-50%); 
+         } 
+        } 
+        
     </style>
     <title>this is my website</title>
 </head>
 <body> 
+   <div class="image"></div>
+    
    <h3 style="border: 2px solid red; color: red;">• What is DarkWeb And DeepWeb?</h3>
    <p style="background-color: black; font-family: courier new;">it's like a layer of spices, we generally use surface web(youtube, google, etc.) after this when we go Little deep, we find deepweb(there is nothing broadly dangerous but some illegal activities can be happened). After that all when we go ahead deeper we get darkweb which is dark as named, most of illegal activities happen here like red rooms, torture and hacker and Hitman purchasing.</p>
     <a href="https://www.google.com" style="color: gray;">The place where world people meet.</a>
