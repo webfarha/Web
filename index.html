@@ -21,7 +21,7 @@
             background-image: url("https://tse1.mm.bing.net/th/id/OIG4.pr78lIv8xIRG96zle6Qq?pid=ImgDetMain"); 
             background-size: cover; 
             background-attachment: fixed; 
-            background-repeat: no-repeat;             
+            background-repeat: no-repeat;                       
         } 
         p { 
             color: red; 
@@ -39,9 +39,10 @@
                 background-image: url("https://tse2.mm.bing.net/th/id/OIG1.OguDTn9xJEiPtd7IXnid?pid=ImgDetMain");
                background-size: contain;
                background-repeat: no-repeat;
+    
                animation-name: moving-animation; 
                animation-duration: 3s; 
-               animation-timing-function: ease; 
+               animation-timing-function: linear; 
                animation-direction: forward; 
                animation-iteration-count: infinite;
               }
@@ -55,18 +56,31 @@
     100% {transform: tranlateX(-50%); 
          } 
         } 
-        
+        #animation-text { animation-name: text; 
+                         animation-duration: 5s; 
+                         animation-timing-function: ease-in; 
+                         animation-direction: forward; 
+                         animation-iteration-count: infinite; 
+                        }
+        @keyframes text {
+            0% { transform: translateX(-100vw);                }
+            50% {
+                transform: translateX(100vw};                
+            }
+            100% { transform: translateX(-100vw);                }
+        }
     </style>
     <title>this is my website</title>
 </head>
 <body> 
+   <h4 style="text-align: center; font-family: courier new; color: green; background-color: red; border: 2px green; border-radius: 30px;" id="animation-text">Made By Farhaan</h4>
    <div class="image"></div>
     
    <h3 style="border: 2px solid red; color: red;">• What is DarkWeb And DeepWeb?</h3>
-   <p style="background-color: black; font-family: courier new;">it's like a layer of spices, we generally use surface web(youtube, google, etc.) after this when we go Little deep, we find deepweb(there is nothing broadly dangerous but some illegal activities can be happened). After that all when we go ahead deeper we get darkweb which is dark as named, most of illegal activities happen here like red rooms, torture and hacker and Hitman purchasing.</p>
+   <p style="background-color: black; font-family: courier new; border-radius: 30px;">it's like a layer of spices, we generally use surface web(youtube, google, etc.) after this when we go Little deep, we find deepweb(there is nothing broadly dangerous but some illegal activities can be happened). After that all when we go ahead deeper we get darkweb which is dark as named, most of illegal activities happen here like red rooms, torture and hacker and Hitman purchasing.</p>
     <a href="https://www.google.com" style="color: gray;">The place where world people meet.</a>
     <h3 style="border: 2px solid red; color: red;">It is safe to use DarkWeb or DeepWeb?</h3>
-    <p style="background-color: black; font-family: courier new;">Yes! you can access it by tor also, but until you take yourself into the safe zone means you have to be hidden and little mistakes can lead you abundant problem.</p>
+    <p style="background-color: black; font-family: courier new; border-radius: 30px;">Yes! you can access it by tor also, but until you take yourself into the safe zone means you have to be hidden and little mistakes can lead you abundant problem.</p>
     <table border="2">
         <tr>
             <th style="color: green;">DarkWeb</th>
